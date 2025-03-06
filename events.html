@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | FOSS Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="FOSS Logo">
+      <span>FOSS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-banner parallax">
+  <div class="page-banner-content fade-in-up">
+    <h1 class="glitch-text" data-text="Events">Events</h1>
+    <p>Join us in our upcoming events and workshops</p>
+  </div>
+</section>
+
+<div class="events-container">
+  <div class="events-section upcoming">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="event-card">
+      <div class="event-date">
+        <span class="date">25</span>
+        <span class="month">MAR</span>
+      </div>
+      <div class="event-content">
+        <div class="event-tag">Featured</div>
+        <h3>Open Source Workshop</h3>
+        <p>Learn how to contribute to open source projects and make your first PR.</p>
+        <div class="event-meta">
+          <span><i class="fas fa-clock"></i> 2:00 PM - 5:00 PM</span>
+          <span><i class="fas fa-map-marker-alt"></i> Room 42, Tech Block</span>
+        </div>
+        <div class="event-actions">
+          <a href="#" class="register-btn">Register Now</a>
+          <button class="add-calendar-btn">
+            <i class="fas fa-calendar-plus"></i>
+            Add to Calendar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="events-section completed">
+    <h2 class="section-title">Completed Events</h2>
+    <div class="event-card completed">
+      <div class="event-date past">
+        <span class="date">15</span>
+        <span class="month">MAR</span>
+      </div>
+      <div class="event-content">
+        <h3>Git & GitHub Basics</h3>
+        <p>Master the fundamentals of version control with Git and GitHub.</p>
+        <div class="event-meta">
+          <span><i class="fas fa-clock"></i> 3:00 PM - 5:00 PM</span>
+          <span><i class="fas fa-map-marker-alt"></i> Online</span>
+        </div>
+        <div class="event-actions">
+          <a href="#" class="resources-btn">View Resources</a>
+          <a href="#" class="recording-btn">Watch Recording</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2025 FOSS Club</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

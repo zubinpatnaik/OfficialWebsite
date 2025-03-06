@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | FOSS Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="FOSS Logo">
+      <span>FOSS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-banner parallax">
+  <div class="page-banner-content fade-in-up">
+    <h1 class="glitch-text" data-text="Our Projects">Our Projects</h1>
+    <p>Explore our open-source initiatives</p>
+  </div>
+</section>
+
+<div class="projects-container">
+  <div class="project-card featured">
+    <div class="project-header">
+      <img src="assets/projects/ecotracker.jpg" alt="EcoTracker">
+      <div class="project-badge">Featured</div>
+    </div>
+    <div class="project-content">
+      <h3>EcoTracker</h3>
+      <p>Environmental monitoring platform helping communities track and improve their ecological impact.</p>
+      <div class="tech-stack">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">IoT</span>
+        <span class="tech-tag">React</span>
+      </div>
+      <div class="project-meta">
+        <span><i class="fas fa-code-branch"></i> Active Development</span>
+        <span><i class="fas fa-users"></i> 12 Contributors</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/fossclub/ecotracker" class="github-link">
+          <i class="fab fa-github"></i> View Source
+        </a>
+        <a href="https://ecotracker.demo.com" class="demo-link">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-header">
+        <img src="assets/projects/communitycare.jpg" alt="CommunityCare">
+      </div>
+      <div class="project-content">
+        <h3>CommunityCare</h3>
+        <p>Healthcare volunteer coordination app connecting helpers with those in need.</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Firebase</span>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-code-branch"></i> Beta</span>
+          <span><i class="fas fa-users"></i> 8 Contributors</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/fossclub/communitycare" class="github-link">
+            <i class="fab fa-github"></i> View Source
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more project cards with similar structure -->
+  </div>
+</div>
+
+<section class="get-involved fade-in-up">
+  <div class="involved-content">
+    <h2>Want to Contribute?</h2>
+    <p>Join our community and help build these amazing projects!</p>
+    <div class="involvement-steps">
+      <div class="step">
+        <i class="fas fa-code-branch"></i>
+        <h3>Fork</h3>
+        <p>Clone our repositories</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-code"></i>
+        <h3>Code</h3>
+        <p>Make your changes</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-pull-request"></i>
+        <h3>Submit</h3>
+        <p>Create a pull request</p>
+      </div>
+    </div>
+    <a href="https://github.com/fossclub" class="cta-button glow-effect">Start Contributing</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 FOSS Club</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
