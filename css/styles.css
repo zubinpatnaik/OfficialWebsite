@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter',sans-serif;
 }
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
+    
+  background-color: #1a1a1a;
+  color: #08B74F;
   overflow-x: hidden;
 }
 .header {
-  background-color: #111;
+  background-color: #1a1a1a;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -25,19 +28,20 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-left: 150px;
   color: #fff;
 }
 .logo img {
-  width: 40px;
+  width: 50px;
   margin-right: 0.5rem;
 }
 .nav-links {
   list-style: none;
   display: flex;
-  
+  margin-right: 150px;
 }
 .nav-links li {
-  margin-left: 1.5rem;
+  margin-left: 35px;
 }
 .nav-links li a {
   text-decoration: none;
@@ -51,7 +55,7 @@ body {
   left: 0;
   width: 0%;
   height: 2px;
-  background: linear-gradient(90deg, #00cc66, #00aadd);
+  background: #08B74F;
   transition: width 0.3s ease;
 }
 .nav-links li a:hover::after,
@@ -73,17 +77,17 @@ body {
   padding: 2rem;
 }
 .hero-content h1 {
-  font-size: clamp(1.5rem, calc(1.5rem + 1vw), 3rem);
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 .hero-content p {
-  font-size: clamp(.5rem, calc(0.5rem + 1vw), 1.2rem);
+  font-size: 1.2rem;
   margin-bottom: 2rem;
   color: #ccc;
 }
 .cta-button {
   display: inline-block;
-  background: linear-gradient(90deg, #00cc66, #00aadd);
+  background: #08B74F;
   color: #fff;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
@@ -91,15 +95,6 @@ body {
   border: none;
   cursor: pointer;
 }
-
-.index-button{
-        display: grid;
-        gap: 1rem;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 0.3fr));
-}
-
-
 .section {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -181,7 +176,7 @@ body {
   padding: 0.8rem;
 }
 .contact-form button {
-  background: linear-gradient(90deg, #00cc66, #00aadd);
+  background: #08B74F;
   color: #fff;
   padding: 0.8rem;
   border: none;
@@ -203,7 +198,7 @@ body {
 
 .team-section {
     margin-bottom: 4rem;
-    padding: 2rem;
+    padding: 7rem;
     background: linear-gradient(145deg, #111, #1a1a1a);
     border-radius: 20px;
     border: 1px solid rgba(0, 204, 102, 0.1);
@@ -425,7 +420,6 @@ body {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1rem;
-    justify-content: center; /*added by niral*/
 }
 
 .tech-tag {
@@ -497,22 +491,6 @@ body {
     cursor: zoom-in;
 }
 
-/*DropDown menu */
-
-.hamburger{
-    display: none;
-    cursor: pointer;
-    width: 34px;
-}
-
-.hamburger .bar {
-    flex-basis: 100%;
-    height: 4px;
-    background-color: #fff;
-    margin: 3px;
-}
-
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .projects-grid {
@@ -522,49 +500,6 @@ body {
     .project-meta {
         flex-direction: column;
         gap: 0.5rem;
-    }
-
-    /*Mobile responsive with dropdown*/
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem 2rem;
-        flex-direction: rows;
-    }
-
-    .nav-links li {
-        margin: 1rem 0 0 0 ;
-        /* display: flex;
-        justify-content: center; */
-
-    }
-
-    .header {
-        background-color: #111;
-        position: sticky;
-        top: 0px;
-        z-index: 999;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    .hamburger {
-        display : flex;
-        flex-wrap: wrap;
-    }
-
-    .nav-links {
-        display: none;
-        flex-basis: 100%;
-        flex-wrap: wrap;
-        gap: 1rem;
-        align-items: center;
-        flex-direction: column;
-        
     }
 }
 
@@ -1414,7 +1349,7 @@ body {
     color: var(--light-green);
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
-    font-size: 0.8rem;
+    font-size: 15px;
     border: 1px solid var(--dark-green);
 }
 
@@ -1601,7 +1536,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
     .event-card {
         flex-direction: column;
     }
@@ -1612,7 +1546,6 @@ body {
         justify-content: center;
         gap: 1rem;
         padding: 1rem;
-        align-items: center;
     }
     
     .event-actions {
@@ -1947,5 +1880,3 @@ body {
         margin-left: 2rem;
     }
 }
-
-
